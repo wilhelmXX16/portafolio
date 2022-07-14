@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilhelm Janampa</title>
+    <!-- Typografia Google Arima-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700" rel="stylesheet">
+    <!-- BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+     <!-- Main.js Sheet -->
+    <link rel="stylesheet" href="assets/js/main.js">
+</head>
+<body class="todo">
+        <div class="navbar">
+            <div class="head_navbar">
+                <div class="navbar__logo">
+                    <a href="/">
+                    <span>WJ</span>
+                    </a>
+                </div>
+                <div id="navbar__menu" class="navbar__menu">
+                    <button id="navbar__cerrar" class="navbar__cerrar">
+                        <i class='bx bx-x'></i>
+                    </button>
+                    <nav class="navbar__lista">
+                        <a href="#home" class="navbar__link">Inicio</a>
+                        <a href="#about" class="navbar__link">About</a>
+                        <a href="#skills" class="navbar__link">Skills</a>
+                        <a href="#proyect" class="navbar__link">Proyects</a>
+                    </nav>
+                </div>
+                <div class="navbar__btn">
+                    <button id="navbar__btn" class="navbar__btn-accion">
+                      <i class='bx bx-menu white'></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script>
+            const menu = document.getElementById('navbar__menu')
+            const abrir = document.getElementById('navbar__btn')
+            const cerrar = document.getElementById('navbar__cerrar')
+
+            abrir.addEventListener('click', (e) => {
+                menu.classList.add('mostrar__menu')
+            })
+            cerrar.addEventListener('click', (e) => {
+                menu.classList.remove('mostrar__menu')
+            })
+        </script>
+    <div class="container__1" id="home">
+        <div class="container__image">
+            <img src="/assets/img/fondo.jpeg" alt="Foto desarrollador">
+        </div>
+        <div class="container__internal">
+            <h2><spam class="name">WILHELM </spam> JANAMPA</h2>
+            <span class="job">DEVELOPER FULL STACK.</span>
+        </div>
+    </div>
+    <main class="container__secondary" id="about">
+        <div class="about">
+            <div class="container__photo">
+                <img src="/assets/img/photo.jpg" alt="Photo Wilhelm Janampa.">
+              </div>
+              <div class="container__about">
+                <span>About me</span>
+                <h2>Creative web designer, Full Stack</h2>
+                <p>I'm web designer, and I'm very passionate and dedicated to my work. With 1 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
+              </div>
+        </div>
+        <section class="section1" id="skills">
+            <h2>Skills:</h2>
+            <div class="container__tarjet">
+                <div class="tarjet">
+                    <div class="tarjet_internal">
+                        <i class="bx bxl-html5 orange"></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+                <div class="tarjet">
+                    <div class="tarjet_internal">
+                        <i class="bx bxl-css3 blue"></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+                <div class="tarjet">
+                    <div class="tarjet_internal">
+                        <i class="bx bxl-nodejs green"></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+                <div class="tarjet">
+                    <div class="tarjet_internal">
+                        <i class="bx bxl-github black"></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+                <div class="tarjet">
+                    <div class="tarjet_internal">
+                        <i class="bx bxl-react 
+                        lightblue "></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section2" id="proyect">
+            <h2>Proyectos</h2>
+            <div class="container__proyect">
+                <div class="proyect">
+                    <div class="proyect__internal">
+                        <div class="proyect__image">
+                            <img src="https://www.staffcreativa.pe/blog/wp-content/uploads/elementos-basicos-diseno-web-ecommerce-1-500x339.png" alt="img">
+                        </div>
+                        <div class="proyect__info">
+                            <h3>E-commerce</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <div class="proyect__accion">
+                                <a href="#" class="proyect__boton">github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyect">
+                    <div class="proyect__internal">
+                        <div class="proyect__image">
+                            <img src="https://cdn-media-1.freecodecamp.org/images/1*bIUXCGYsVTXyBndd4suLfA.png" alt="img">
+                        </div>
+                        <div class="proyect__info">
+                            <h3>Briefcase</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <div class="proyect__accion">
+                                <a href="#" class="proyect__boton">github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<footer class="footer">
+    <div class="container__footer">
+        <div class="container__footer__item">
+            <h3>Resources:</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#proyect">Proyect</a></li>
+              </ul>
+        </div>
+        <div class="container__footer__item social">
+            <h3>Social:</h3>
+          <ul>
+            <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+            <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+            <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
+            <li><a href="#"><i class='bx bxl-meta'></i></a></li>
+            <li><a href="#"><i class='bx bxl-gmail'></i></a></li>
+            <li><a href="#"><i class='bx bxl-whatsapp'></i></a></li>
+            <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+          </ul>
+        </div>
+    </div>
+</footer>
+</html>
