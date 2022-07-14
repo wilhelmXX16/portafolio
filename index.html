@@ -14,7 +14,7 @@
     <!-- Style Sheet -->
     <link rel="stylesheet" href="assets/css/style.css">
      <!-- Main.js Sheet -->
-    <link rel="stylesheet" href="assets/js/main.js">
+    
 </head>
 <body class="todo">
         <div class="navbar">
@@ -42,18 +42,6 @@
                 </div>
             </div>
         </div>
-        <script>
-            const menu = document.getElementById('navbar__menu')
-            const abrir = document.getElementById('navbar__btn')
-            const cerrar = document.getElementById('navbar__cerrar')
-
-            abrir.addEventListener('click', (e) => {
-                menu.classList.add('mostrar__menu')
-            })
-            cerrar.addEventListener('click', (e) => {
-                menu.classList.remove('mostrar__menu')
-            })
-        </script>
     <div class="container__1" id="home">
         <div class="container__image">
             <img src="/assets/img/fondo.jpeg" alt="Foto desarrollador">
@@ -144,30 +132,32 @@
             </div>
         </section>
     </main>
-</body>
-<footer class="footer">
-    <div class="container__footer">
-        <div class="container__footer__item">
-            <h3>Resources:</h3>
+
+    <footer class="footer">
+        <div class="container__footer">
+            <div class="container__footer__item">
+                <h3>Resources:</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#proyect">Proyect</a></li>
+                </ul>
+            </div>
+            <div class="container__footer__item social">
+                <h3>Social:</h3>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#proyect">Proyect</a></li>
-              </ul>
+                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
+                <li><a href="#"><i class='bx bxl-meta'></i></a></li>
+                <li><a href="#"><i class='bx bxl-gmail'></i></a></li>
+                <li><a href="#"><i class='bx bxl-whatsapp'></i></a></li>
+                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+            </ul>
+            </div>
         </div>
-        <div class="container__footer__item social">
-            <h3>Social:</h3>
-          <ul>
-            <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
-            <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
-            <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
-            <li><a href="#"><i class='bx bxl-meta'></i></a></li>
-            <li><a href="#"><i class='bx bxl-gmail'></i></a></li>
-            <li><a href="#"><i class='bx bxl-whatsapp'></i></a></li>
-            <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
-          </ul>
-        </div>
-    </div>
-</footer>
+    </footer>
+    <script src="/assets/js/main.js"></script>
+</body>
 </html>
